@@ -1,0 +1,52 @@
+/* Ultrawide Desktop width banner  */
+
+
+@media screen and (min-width: 1100px)
+{
+    #banner {
+        min-height: 575px;
+        background: url(../../../assets/images/ferrari-side.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+}
+
+/* Desktop width banner  */
+
+@media screen and (max-width: 1100px)
+{
+    #banner {
+        min-height: 575px;
+        background: url('../../../assets/images/audi.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+    }
+    
+}
+
+/* Tablet width banner */
+@media screen and (max-width: 850px) {
+    #banner {
+        min-height: 400px;
+        background: url('../../../assets/images/mpower.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+}
+
+/* Mobile width banner */
+@media screen and (max-width: 600px) {
+    #banner {
+        min-height: 300px;
+        background: url('../../../assets/images/rupes.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position-x: +5%;
+    }
+}
