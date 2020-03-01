@@ -1,6 +1,6 @@
 # JSM Detailing with Angular
 
-The project in this repository is an a port of the JSM Detailing project (see link below for original project) from raw HTML, CSS, and Javascript to Angular. 
+The project in this repository is a port of the JSM Detailing project (see link below for original project) from raw HTML, CSS, and Javascript to Angular. 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
 
