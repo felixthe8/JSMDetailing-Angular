@@ -1,0 +1,47 @@
+/* Product showcase styling */
+.products {
+    margin-bottom: 5%;
+    padding-top: 2%;
+    
+  }
+  
+  .category-list {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .category {
+    width: 30%;
+    float: left;
+    text-align: center;
+    padding: 0% 1%;
+  }
+  
+  .category img {
+    width: 100%;
+  }
+  
+  
+  .item, .service-heading {
+    font-weight: bold;
+  }
+  
+  .item-description {
+    margin: 0% 5%;
+  
+  }
+
+  /* 
+  Changes how the images will appear when tablet width is achieved.
+  Instead of 3 columns, display as 1 column
+*/
+@media only screen and (max-width: 850px) {
+    .category {
+      width: 90%;
+      margin-bottom: 10%;
+    }
+  }
+  
