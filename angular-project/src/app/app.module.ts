@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { HeaderComponent } from './shared-components/header/header.component';
 import { NavBarComponent } from './shared-components/nav-bar/nav-bar.component';
-import { BannerComponent } from './homepage/banner/banner.component'
+import { BannerComponent } from './homepage/banner/banner.component';
+import { AboutComponent } from './homepage/about/about.component'
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { BannerComponent } from './homepage/banner/banner.component'
     HomepageComponent,
     HeaderComponent,
     NavBarComponent,
-    BannerComponent
+    BannerComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
