@@ -1,0 +1,45 @@
+.service {
+    margin: auto;
+    width: 90%;
+    border-top: 2.5px solid black;
+    display: flex;
+  }
+  
+  .service-column {
+    float: left;
+    flex: 50%;
+    text-align: center;
+  }
+  
+  /*  Create a border on the right side of the first div in the service section   */
+  .service div:first-child {
+    border-right: 2px solid black;
+  }
+  
+  #contact-info span, #account-info span {
+    font-size: 1.1em;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .item, .service-heading {
+      text-decoration: underline;
+    }
+  
+    /* Remove border styles at mobile width */
+    .service {
+      border-top: none;
+      display: block;
+    }
+  
+    .service div:first-child {
+      border-right: none;
+    }
+    
+    .service-column {
+      width: 100%;
+    }
+  
+    #contact-info span, #account-info span {
+      font-size: inherit;
+    }
+  }

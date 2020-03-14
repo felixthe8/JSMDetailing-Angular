@@ -9,7 +9,9 @@ import { HeaderComponent } from './shared-components/header/header.component';
 import { NavBarComponent } from './shared-components/nav-bar/nav-bar.component';
 import { BannerComponent } from './homepage/banner/banner.component';
 import { AboutComponent } from './homepage/about/about.component';
-import { ProductsComponent } from './homepage/products/products.component'
+import { ProductsComponent } from './homepage/products/products.component';
+import { FooterComponent } from './shared-components/footer/footer.component';
+import { AboutLinksComponent } from './homepage/about-links/about-links.component'
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ProductsComponent } from './homepage/products/products.component'
     NavBarComponent,
     BannerComponent,
     AboutComponent,
-    ProductsComponent
+    ProductsComponent,
+    FooterComponent,
+    AboutLinksComponent
   ],
   imports: [
     BrowserModule,
