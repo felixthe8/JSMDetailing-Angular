@@ -1,0 +1,17 @@
+<div class="content">
+    <div class="description">
+        <h1>{{portfolioHeader}}</h1>
+        <p>{{portfolioHeaderText}}</p>
+    </div>
+
+    <div class="images animate-bottom">
+        <div class="img-container" *ngFor="let image of portfolioImageList">
+            <img [src]="image.src" [alt]="image.name" >
+        </div>
+    </div>
+
+    <div class="insta">
+        <fa-icon [icon]="faCamera" class="fa-2x"></fa-icon>
+        <p>Follow us <a href="https://www.instagram.com/jsmdetailing/?hl=en">@jsmdetailing</a></p>
+  </div>
+</div>

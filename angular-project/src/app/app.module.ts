@@ -11,7 +11,8 @@ import { BannerComponent } from './homepage/banner/banner.component';
 import { AboutComponent } from './homepage/about/about.component';
 import { ProductsComponent } from './homepage/products/products.component';
 import { FooterComponent } from './shared-components/footer/footer.component';
-import { AboutLinksComponent } from './homepage/about-links/about-links.component'
+import { AboutLinksComponent } from './homepage/about-links/about-links.component';
+import { PortfolioComponent } from './portfolio/portfolio.component'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AboutLinksComponent } from './homepage/about-links/about-links.componen
     AboutComponent,
     ProductsComponent,
     FooterComponent,
-    AboutLinksComponent
+    AboutLinksComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
