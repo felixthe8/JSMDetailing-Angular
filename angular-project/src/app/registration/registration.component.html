@@ -37,10 +37,18 @@
             </div>
 
             <ng-container>
-                <button mat-raised-button>Submit</button>
+                <button mat-raised-button [swal]="registrationConfirmation">Submit</button>
                 <button mat-raised-button>Reset</button>
             </ng-container>
         
     </mat-card>
+
+    <swal #registrationConfirmation
+        title="Successful Registration"
+        text="Thank you for registering!"
+        icon="success"
+        (confirm)="confirmSuccess()">
+    
+    </swal>
 
 
