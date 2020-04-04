@@ -12,7 +12,15 @@ import { AboutComponent } from './homepage/about/about.component';
 import { ProductsComponent } from './homepage/products/products.component';
 import { FooterComponent } from './shared-components/footer/footer.component';
 import { AboutLinksComponent } from './homepage/about-links/about-links.component';
-import { PortfolioComponent } from './portfolio/portfolio.component'
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RegistrationComponent } from './registration/registration.component';
+
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -25,12 +33,18 @@ import { PortfolioComponent } from './portfolio/portfolio.component'
     ProductsComponent,
     FooterComponent,
     AboutLinksComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatCardModule,
+    MatToolbarModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

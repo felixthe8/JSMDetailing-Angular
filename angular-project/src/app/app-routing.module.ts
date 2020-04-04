@@ -1,3 +1,4 @@
+import { RegistrationComponent } from './registration/registration.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { NgModule } from '@angular/core';
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'portfolio',
     component: PortfolioComponent
+  },
+  {
+    path: 'registration',
+    component: RegistrationComponent
   }
 ];
 
