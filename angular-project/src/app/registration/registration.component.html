@@ -4,41 +4,39 @@
             <div class="form">
                 <mat-form-field>
                     <mat-label>First Name</mat-label>
-                    <input matInput type="text">
+                    <input [(ngModel)]="firstName" matInput type="text" required>
                 </mat-form-field>
 
                 
                 <mat-form-field>
                     <mat-label>Last Name</mat-label>
-                    <input matInput type="text">
+                    <input [(ngModel)]="lastName" matInput type="text" required>
                 </mat-form-field>
 
                 <mat-form-field>
                     <mat-label>Email</mat-label>
-                    <input matInput type="email">
+                    <input [(ngModel)]="email" matInput type="email" required>
                 </mat-form-field>
 
-                
                 <mat-form-field>
                     <mat-label>Username</mat-label>
-                    <input matInput type="text">
+                    <input [(ngModel)]="userName" matInput type="text" required>
                 </mat-form-field>
 
                 <mat-form-field>
                     <mat-label>Password</mat-label>
-                    <input matInput type="password">
+                    <input [(ngModel)]="password" matInput type="password" required>
                 </mat-form-field>
 
                 <mat-form-field>
                     <mat-label>Confirm Password</mat-label>
-                    <input matInput type="password">
+                    <input [(ngModel)]="confirmPassword" matInput type="password" required>
                 </mat-form-field>
-
             </div>
 
             <ng-container>
                 <button mat-raised-button [swal]="registrationConfirmation">Submit</button>
-                <button mat-raised-button>Reset</button>
+                <button (click)="resetInputs()" mat-raised-button>Reset</button>
             </ng-container>
         
     </mat-card>

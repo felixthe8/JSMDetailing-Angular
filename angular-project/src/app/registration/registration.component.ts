@@ -8,6 +8,13 @@ import { Router } from '@angular/router';
 })
 export class RegistrationComponent implements OnInit {
 
+  firstName: string;
+  lastName: string;
+  email: string;
+  userName: string;
+  password: string;
+  confirmPassword: string;
+
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -17,6 +24,15 @@ export class RegistrationComponent implements OnInit {
   {
     // Navigate back to homepage after successful registration
     this.router.navigate(['/'])
+  }
+
+  resetInputs() : void {
+    this.firstName = '';
+    this.lastName = '';
+    this.email = '';
+    this.userName= '';
+    this.password = '';
+    this.confirmPassword = '';
   }
 
 }
