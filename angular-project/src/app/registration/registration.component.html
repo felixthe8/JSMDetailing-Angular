@@ -1,45 +1,39 @@
+<form-container [formTitle]="formTitle">
+    <mat-form-field>
+        <mat-label>First Name</mat-label>
+        <input [(ngModel)]="firstName" matInput type="text" required>
+    </mat-form-field>
 
-    <mat-card>
-        <mat-toolbar>JSM Customer Registration</mat-toolbar>
-            <div class="form">
-                <mat-form-field>
-                    <mat-label>First Name</mat-label>
-                    <input [(ngModel)]="firstName" matInput type="text" required>
-                </mat-form-field>
+    <mat-form-field>
+        <mat-label>Last Name</mat-label>
+        <input [(ngModel)]="lastName" matInput type="text" required>
+    </mat-form-field>
 
-                
-                <mat-form-field>
-                    <mat-label>Last Name</mat-label>
-                    <input [(ngModel)]="lastName" matInput type="text" required>
-                </mat-form-field>
+    <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input [(ngModel)]="email" matInput type="email" required>
+    </mat-form-field>
 
-                <mat-form-field>
-                    <mat-label>Email</mat-label>
-                    <input [(ngModel)]="email" matInput type="email" required>
-                </mat-form-field>
+    <mat-form-field>
+        <mat-label>Username</mat-label>
+        <input [(ngModel)]="userName" matInput type="text" required>
+    </mat-form-field>
 
-                <mat-form-field>
-                    <mat-label>Username</mat-label>
-                    <input [(ngModel)]="userName" matInput type="text" required>
-                </mat-form-field>
+    <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input [(ngModel)]="password" matInput type="password" required>
+    </mat-form-field>
 
-                <mat-form-field>
-                    <mat-label>Password</mat-label>
-                    <input [(ngModel)]="password" matInput type="password" required>
-                </mat-form-field>
+    <mat-form-field>
+        <mat-label>Confirm Password</mat-label>
+        <input [(ngModel)]="confirmPassword" matInput type="password" required>
+    </mat-form-field>
 
-                <mat-form-field>
-                    <mat-label>Confirm Password</mat-label>
-                    <input [(ngModel)]="confirmPassword" matInput type="password" required>
-                </mat-form-field>
-            </div>
+    <button mat-raised-button [swal]="registrationConfirmation">Submit</button>
+    <button (click)="resetInputs()" mat-raised-button>Reset</button>
+    
+</form-container>       
 
-            <ng-container>
-                <button mat-raised-button [swal]="registrationConfirmation">Submit</button>
-                <button (click)="resetInputs()" mat-raised-button>Reset</button>
-            </ng-container>
-        
-    </mat-card>
 
     <swal #registrationConfirmation
         title="Successful Registration"

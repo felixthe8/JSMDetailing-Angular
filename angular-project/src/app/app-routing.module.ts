@@ -1,3 +1,4 @@
+import { ScheduleServiceComponent } from './schedule-service/schedule-service.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'registration',
     component: RegistrationComponent
+  },
+  {
+    path: 'schedule-service',
+    component: ScheduleServiceComponent
   }
 ];
 

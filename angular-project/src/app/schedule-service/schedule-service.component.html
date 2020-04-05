@@ -1,0 +1,14 @@
+<form-container [formTitle]="formTitle">
+    <mat-form-field>
+        <mat-label>Username</mat-label>
+        <input [(ngModel)]="username" matInput type="text" required>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input [(ngModel)]="password" matInput type="password" required>
+    </mat-form-field>
+
+    <button mat-raised-button>Log In</button>
+
+</form-container>

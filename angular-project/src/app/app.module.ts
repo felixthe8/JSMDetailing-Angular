@@ -23,6 +23,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+import { ScheduleServiceComponent } from './schedule-service/schedule-service.component';
+import { FormContainerComponent } from './shared-components/form-container/form-container.component';
 
 
 
@@ -38,7 +40,9 @@ import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
     FooterComponent,
     AboutLinksComponent,
     PortfolioComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    ScheduleServiceComponent,
+    FormContainerComponent
   ],
   imports: [
     FormsModule,

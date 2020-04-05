@@ -4,9 +4,11 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-registration',
   templateUrl: './registration.component.html',
-  styleUrls: ['./registration.component.scss']
+  styleUrls: ['./registration.component.scss', '../shared-components/form-container/form-container.component.scss']
 })
 export class RegistrationComponent implements OnInit {
+
+  formTitle = 'JSM Registration'
 
   firstName: string;
   lastName: string;

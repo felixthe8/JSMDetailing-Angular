@@ -1,0 +1,16 @@
+<mat-card>
+    <mat-toolbar>
+        {{formTitle}}
+    </mat-toolbar>
+
+    <mat-card-content>
+        <div class="form">
+            <ng-content select="mat-form-field"></ng-content>
+        </div>
+    </mat-card-content>
+
+    <mat-card-actions>
+        <ng-content select="button"></ng-content>
+    </mat-card-actions>
+
+</mat-card>
